@@ -33,7 +33,7 @@ pipeline {
 	stage('Maven Package'){
 		steps{
 			echo 'Project packaging stage'
-			bat label: 'Project packaging', script: '''mvn  package'''
+			bat label: 'Project packaging', script: '''mvn -f credit-union-project test package'''
 		}
 	} 		
     
